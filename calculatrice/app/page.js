@@ -28,32 +28,36 @@ export default function Home() {
         setResult('')
         setExpression('')
     } else {
-      setExpression((prevExpression) => prevExpression + value)
+      setExpression((pvValue) => pvValue + value)
     }
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
-      <h1 className="text-4xl font-blod mb-10" >Calculatrice</h1>
-    <div className="bg-white p-6 rounded-lg shadow-lg">
+    <main className="bg-slate-400 flex min-h-screen min-w-[320px] flex-col items-center p-16">
+      <h1 className="text-4xl font-bold mb-8" >Calculatrice</h1>
+    <div className="bg-slate-800 p-6 rounded-2xl shadow-xl">
       <input 
+        data-testid="expression"
         type="text" 
-        className="w-full mb-2 text-3xl border-b-2 border-gray-400 focus:outline-none" 
+        className="w-full mb-2 text-3xl bg-slate-300 rounded-xl focus:outline-none" 
         value={expression}
         readOnly
       />
       <input 
+        data-testid="result"
         type="text"  
-        className="w-full text-1xl mb-4 focus:outline"
+        className="w-full text-1xl mb-4 focus:outline-none bg-slate-300 rounded-lg"
         value={result}
         readOnly
       />
       <div className="grid grid-cols-4 gap-2" >
         {buttons.map((btn, index) => (
           <button 
+            data-testid={`btn-${btn}`}
             key={index}
             onClick={() => handleButtonClick(btn)}
-            className="text-4xl bg-gray-300 hover:bg-gray-400 p-2 rounded-lg"
+            className="text-4xl text-slate-50 bg-slate-700 hover:bg-slate-500 p-1 rounded-lg"
+            value={btn}
           >
             {btn}
           </button>
