@@ -10,9 +10,9 @@ Bienvenue dans la documentation de l'Application Calculatrice ! Cette applicatio
 
 ## Utilisation
 
-1 - Accédez à l'application en suivant ce lien : [Calculatrice en ligne](https://calculatrice-ashen.vercel.app/).
-2 - Utilisez l'interface intuitive pour effectuer vos calculs.
-3 - Tapez les chiffres et les opérateurs sur le clavier virtuel et appuyez sur "égal" pour afficher le résultat.
+1.  Accédez à l'application en suivant ce lien : [Calculatrice en ligne](https://calculatrice-ashen.vercel.app/).
+2.  Utilisez l'interface intuitive pour effectuer vos calculs.
+3.  Tapez les chiffres et les opérateurs sur le clavier virtuel et appuyez sur "égal" pour afficher le résultat.
 
 ## Support
 
